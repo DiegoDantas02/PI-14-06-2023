@@ -1,0 +1,13 @@
+selecionar.php --> listagem dos alunos, botão para cadastrar novo alunos
+
+novo.php --> formulário para cadastro de um novo aluno
+
+inserir.php --> realizar a inserção do BD
+
+editar.php --> formulário com os dados do aluno preenchido pronto pra modificação 
+
+atualizar.php --> realizar a atualização dos dados no BD 
+
+deleta.php --> página que realiza a exclusão dos dados do aluno
+
+visualizar.php --> página com os dados e um único aluno
