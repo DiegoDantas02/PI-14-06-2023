@@ -10,8 +10,8 @@
 <body>
     
 <form method="post" action="validar.php">
-    <input  name="usuario" type="email" placeholder="Email">
-    <input  name="senha" type="password" placeholder="senha">
+    <input  name="usuario" type="email" placeholder="Email" required>
+    <input  name="senha" type="password" placeholder="senha" required maxlength="20">
     <button type="submit"> Acessar Sistema</button>
 </form>
 
