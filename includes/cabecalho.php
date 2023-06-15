@@ -13,7 +13,7 @@
     
 <header>
     <center>
-        <a href="../painel/index">
+        <a href="../painel/index.php">
         <img src="../logo.jpg" widht="150">
         </a>
     </center>
