@@ -14,6 +14,7 @@
     <input  name="senha" type="password" placeholder="senha" required maxlength="20">
     <button type="submit"> Acessar Sistema</button>
 </form>
-
+<?php
+?>
 </body>
 </html>
