@@ -32,17 +32,21 @@ include "../includes/conexao.php";
       <tr>
          <td><?php echo $um_aluno['id'] ?></td>
          <td>
-         <img src="<?php echo $um_aluno['foto'];?>" alt="" width="50px" height="60px">
+            <img src="<?php echo $um_aluno['foto']; ?>" alt="" width="50px" height="60px">
          </td>
 
-      <td>
+         <td>
             <?php echo $um_aluno['nome'] ?>
             ><?php echo $um_aluno['sobrenome'] ?>
          </td>
 
          <td><?php echo $um_aluno['telefone'] ?></td>
          <td><?php echo $um_aluno['email'] ?></td>
-
+         <td style="text-decoration: none;">
+            <a href="#" title="Ver Completo">Visualizar</a>
+            <a href="#" title="Editar Os dados ">Editar</a>
+            <a href="#" title="Excluir dados do aluno">Excluir</a>
+         </td>
       </tr>
    <?php
    endwhile;
