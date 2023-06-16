@@ -21,6 +21,7 @@ include "../includes/conexao.php";
       <td>Telefone</td>
       <td>E-mail</td>
       <td>Data de nascimento</td>
+      <td>Ações</td>
 
    </tr>
    <?php
@@ -31,7 +32,7 @@ include "../includes/conexao.php";
       <tr>
          <td><?php echo $um_aluno['id'] ?></td>
          <td>
-         <a href="../img/chapeuformatura.png"></a>
+         <img src="<?php echo $um_aluno['foto'];?>" alt="" width="50px" height="60px">
          </td>
 
       <td>
