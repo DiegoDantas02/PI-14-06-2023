@@ -6,6 +6,8 @@ include "../includes/menu.php";
 <p>Vamos cadastrar um aluno novo no sistema.</p>
 
 <form action="inserir.php" method="post">
+    Foto: <input name="foto" required maxlegth="50">
+    <br>
     Nome: <input name="nome" required maxlegth="50">
     <br> 
     Sobrenome: <input name="sobrenome" required maxlegth="50">

@@ -33,25 +33,22 @@ include "../includes/conexao.php";
       <tr>
          <td><?php echo $um_aluno['id'] ?></td>
          <td>
-            <img src="<?php echo $um_aluno['foto']; ?>" alt="" width="50px" height="60px">
-         </td>
+            <img src="<?php echo $um_aluno['foto']; ?>" alt="excluir" width="50px" height="60px">
+         
 
-         <td>
-            <?php echo $um_aluno['foto'] ?>
-            <?php echo $um_aluno['nome'] ?>
-            <?php echo $um_aluno['sobrenome'] ?>
-         </td>
-
+         <td><?php echo $um_aluno['nome'] ?></td>
+         <td><?php echo $um_aluno['sobrenome'] ?></td>
          <td><?php echo $um_aluno['telefone'] ?></td>
          <td><?php echo $um_aluno['email'] ?></td>
+         <td><?php echo $um_aluno['data_nascimento'] ?></td>
          
-         <td><?php echo $um_aluno['data_nascimento'] ?>
-      </td>
 
          <td style="text-decoration: none;">
-            <a href="visualizar.php" title="Ver Completo">Visualizar</a>
-            <a href="#" title="Editar Os dados ">Editar</a>
-            <a href="deletar.php?id=<?php echo $um_aluno['id'];?>" title="Excluir dados do aluno">Excluir</a>
+            <a href="visualizar.php?id=<?php echo $um_aluno["id"];?>" title="Ver Completo">Visualizar</a>
+
+            <a href="editar.php" title="Editar Os dados ">Editar</a>
+
+            <a href="deletar.php?id=<?php echo $um_aluno["id"];?>" title="Excluir dados do aluno" >Excluir</a>
             <img src="../img/trash.png" width="24" title="Excluir Aluno">
          </td>
       </tr>
