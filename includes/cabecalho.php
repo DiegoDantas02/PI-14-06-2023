@@ -14,7 +14,8 @@
 <header>
     <center>
         <a href="../painel/index.php">
-        <img src="../logo.jpg" widht="150">
+        <img src="../img/logo.jpg" widht="10px" height="100px">
+        <br>
         </a>
     </center>
 </header>

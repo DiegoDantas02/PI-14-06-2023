@@ -18,6 +18,7 @@ include "../includes/conexao.php";
       <td>Código</td>
       <td>Foto</td>
       <td>Nome</td>
+      <td>Sobrenome</td>
       <td>Telefone</td>
       <td>E-mail</td>
       <td>Data de nascimento</td>
@@ -36,16 +37,22 @@ include "../includes/conexao.php";
          </td>
 
          <td>
+            <?php echo $um_aluno['foto'] ?>
             <?php echo $um_aluno['nome'] ?>
-            ><?php echo $um_aluno['sobrenome'] ?>
+            <?php echo $um_aluno['sobrenome'] ?>
          </td>
 
          <td><?php echo $um_aluno['telefone'] ?></td>
          <td><?php echo $um_aluno['email'] ?></td>
+         
+         <td><?php echo $um_aluno['data_nascimento'] ?>
+      </td>
+
          <td style="text-decoration: none;">
-            <a href="#" title="Ver Completo">Visualizar</a>
+            <a href="visualizar.php" title="Ver Completo">Visualizar</a>
             <a href="#" title="Editar Os dados ">Editar</a>
-            <a href="#" title="Excluir dados do aluno">Excluir</a>
+            <a href="deletar.php?id=<?php echo $um_aluno['id'];?>" title="Excluir dados do aluno">Excluir</a>
+            <img src="../img/trash.png" width="24" title="Excluir Aluno">
          </td>
       </tr>
    <?php
