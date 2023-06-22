@@ -16,10 +16,11 @@ include "../includes/menu.php";
     <br> 
     E-mail: <input name="email" required maxlegth="50">
     <br> 
-    Foto: <input name="telefone" required maxlegth="50">
+    Telefone: <input name="telefone" required maxlegth="50">
     <br> 
     <button type="submit">Salvar</button>
 </form>
+
 <?php
 include "../includes/rodape.php";
 ?>

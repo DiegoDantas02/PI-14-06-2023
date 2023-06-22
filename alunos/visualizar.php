@@ -27,17 +27,24 @@ endwhile;
 
 <h1>Ficha do Estudante</h1>
 
+<img src="<?php echo $foto ?> " width="80px" >
+<br>
 Nome: <?php echo $nome ."". $sobrenome ; ?><br>
 
 Data de nascimento: <?php echo $data_nascimento ; ?><br>
+
 E-mail: <?php echo $email ; ?><br>
+
 Telefone: <?php echo $telefone ; ?><br>
+<br>
+<a href="selecionar.php"> Voltar </a>
 
 
 <br>
 <br>
 <br>
 <br>
+
 <?php
 mysqli_close($conexao);
 include "../includes/rodape.php";

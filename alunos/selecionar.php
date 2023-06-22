@@ -46,7 +46,7 @@ include "../includes/conexao.php";
          <td style="text-decoration: none;">
             <a href="visualizar.php?id=<?php echo $um_aluno["id"];?>" title="Ver Completo">Visualizar</a>
 
-            <a href="editar.php" title="Editar Os dados ">Editar</a>
+            <a href="editar.php?id=<?php echo $um_aluno["id"];?>" title="Editar Os dados ">Editar</a>
 
             <a href="deletar.php?id=<?php echo $um_aluno["id"];?>" title="Excluir dados do aluno" >Excluir</a>
             <img src="../img/trash.png" width="24" title="Excluir Aluno">
@@ -56,6 +56,7 @@ include "../includes/conexao.php";
    endwhile;
    ?>
 </table>
+<br><br><br>
 <?php
 include "../includes/rodape.php";
 ?>
