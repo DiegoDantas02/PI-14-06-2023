@@ -14,7 +14,7 @@ endwhile;
 ?>
 <h1>Editar aluno <?php echo $id; ?></h1>
 
-<form method="post" action="atualizar.php">
+<form method="post" action="atualizar.php?id=<?php echo $id;?>">
     <!-- mostrar no input a variavel -->
     Nome: <input name="nome" value="<?php echo $nome;?>"> <br>
 <br>
